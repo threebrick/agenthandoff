@@ -32,7 +32,7 @@ const handoff = new handoff_1.Handoff(bot, isAgent);
 // Bot Middleware
 //========================================================
 bot.use(commands_1.commandsMiddleware(handoff), handoff.routingMiddleware());
-
+ 
 server.get('/', restify.serveStatic({
  directory: __dirname,
  default: '/index.html'
